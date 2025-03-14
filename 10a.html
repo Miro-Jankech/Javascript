@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10a</title>
+    <style>
+        .add-to-cart-button{
+            background-color: rgb(255, 216, 20);
+            width: 140px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+            font-weight: 500;
+        }
+        .request-now{
+            color: white;
+            background-color: black;
+            width: 140px;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        .schedule{
+            color: black;
+            background-color: rgb(230, 230, 230);
+            width: 140px;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        .js-gaming-btn{
+            background-color: black;
+            color: white;
+            height: 35px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+        .is-toggled{
+            background-color: rgb(218, 215, 215);
+            color: black;
+            height: 35px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+    <button class="add-to-cart-button">Add to Cart</button>
+    <p></p>
+    <button class="request-now">Request now</button>
+    <button class="schedule">Schedule for later</button>
+
+    <button class="js-button">Test</button>
+    <p></p>
+    <button class="js-gaming-btn">Gaming</button>
+
+
+
+    <script>
+      //const result = document.querySelector('.js-button').classList.contains('js-button')
+      //console.log(result);
+
+      let gamingButton = document.querySelector('.js-gaming-btn');
+      console.log(gamingButton);
+      if(gamingButton.classList.contains('.is-toggled')){
+        console.log('yes');
+      } else {
+        document.querySelector('.js-gaming-btn').classList.add('is-toggled');
+        console.log('no');
+        } 
+      
+
+    </script>
+</body>
+</html>
