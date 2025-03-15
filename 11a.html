@@ -7,10 +7,39 @@
 </head>
 <body>
     <script>
-        const myArray = [10,20,30]
-        console.log(myArray);
+
+        /*
+        const myArray = [10,20,30];
         myArray[2] = 99;
-        console.log(myArray);
+        
+
+        const myNewArray = ['Toto', 'je', 'moje', 'pole'];
+        getLastValue(myNewArray);
+
+
+        function getLastValue(myNewArray) {
+            console.log(myNewArray);
+            for(let i = 0; i<myNewArray.length; i++) {
+                if(i===myNewArray.length-1){
+                console.log(myNewArray[i])
+                }
+            }
+        }
+
+        */
+
+        const mojePole = ['hi','hoe','is','het'];
+        const mySwappedField = []
+        arraySwap(mojePole);
+        
+        function arraySwap(mojePole) {
+            for(let i = mojePole.length-1; i >= 0; i--) {
+                mySwappedField.push(mojePole[i]);
+            }
+            console.log(mySwappedField);
+        } 
+
+
     </script>
 </body>
 </html>
