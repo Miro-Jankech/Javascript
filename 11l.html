@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>11l</title>
+
+</head>
+
+<body>
+
+ 
+
+    <script>
+
+       
+
+        const myArray = [7];
+
+        const myObject = {
+
+            min : 0,
+
+            max : 0
+
+        };
+
+ 
+
+        minMax(myArray);
+
+ 
+
+        function minMax(myArray) {  
+
+            if(myArray.length ===0) {
+
+                    myObject.min = null;
+
+                    myObject.max = null;
+
+                    return (console.log(myObject));
+
+                }
+
+            if(myArray.length === 1) {
+
+                for(let i = 0; i <myArray.length; i++){
+
+                    myObject.min = myArray[i];
+
+                    myObject.max = myArray[i];
+
+                    return (console.log(myObject));
+
+                }
+
+            }        
+
+            for(let i =0; i<myArray.length;i++) {
+
+                if(myArray[i]<myObject.min) {
+
+                    myObject.min = myArray[i];                    
+
+                } else if(myArray[i]>myObject.max) {
+
+                    myObject.max = myArray[i];                    
+
+                }            
+
+            }
+
+            console.log(myObject)
+
+        }
+
+    </script>
+
+   
+
+</body>
+
+</html>
