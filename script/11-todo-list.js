@@ -23,7 +23,7 @@ function renderToDolist(){
       <button onclick ="
       todoList.splice(${i},1);
       renderToDolist();        
-      ">Delete</button>
+      " class= "delete-todo-button">Delete</button>
     `;
     todoListHTML += html;
   };
