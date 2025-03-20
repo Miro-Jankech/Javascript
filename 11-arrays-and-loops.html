@@ -73,7 +73,7 @@
 
     console.log(numbsDoubled);
 
-    */
+   
 
     const array1 = [1,2,3];
     const array2 = array1.slice();
@@ -89,16 +89,54 @@
     console.log(firstValue);
     console.log(secondValue);
 
+        // break feature
 
+    for (let i=1; i<=10; i++) {
+        console.log(i);
+        if (i === 8) {
+            break;
+        }
+    }
+ 
+        
+        // continue featrure
 
-     
+        for (let i = 0; i<= 10; i++) {
+            if (i % 3 ===0) {
+                continue;
+            }
+            console.log(i);
+        }
+        
 
+        let i = 0;
 
+        while (i<10) {
+            if(i % 3 === 0) {
+                i++;
+                continue;
+            }
+            console.log(i);
+            i++;
+        }
+        */
+       
 
+        function doubleArray(nums) {
+        
+            const numbsDoubled = [];
 
+            for (let i = 0; i < nums.length; i++){
+                const num = nums[i];
+                numbsDoubled.push(num *2);
+            }
+            console.log(numbsDoubled);
 
+        }
 
-
+        doubleArray([1,5,3]);
+        doubleArray([11,5,3]);
+        
 
 
 
