@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12c</title>
+</head>
+<body>
+  
+<button class="js-start-button" onclick="Loading()">Start</button>
+
+
+<button class = "js-add-to-cart" onclick="Added()">Add to cart</button>
+
+<p class="js-added"></p>
+
+<script>
+
+    function Loading() {
+      document.querySelector(".js-start-button").innerHTML = "Loading...";
+      if (document.querySelector(".js-start-button").innerHTML === "Loading...") {
+        setTimeout(changeButton,1000);
+      }
+    }
+
+    function changeButton() {
+      document.querySelector(".js-start-button").innerHTML = "Finished!";
+    }
+    let runningTimeout;
+
+    function Added() {
+      document.querySelector(".js-added").innerHTML = "Added";
+
+      if (runningTimeout) {   
+        console.log("clearing previous timeout...");
+        clearTimeout(runningTimeout);
+      }
+
+      runningTimeout = setTimeout(removeText,2000);  
+      console.log(`Current setTimeout ID: ${runningTimeout}`); 
+
+      
+    }
+
+    function removeText() {
+      document.querySelector(".js-added").innerHTML = "";
+    }
+
+
+
+  
+
+
+</script>
+</body>
+</html>

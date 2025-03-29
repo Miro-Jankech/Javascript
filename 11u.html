@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11Q</title>
+</head>
+<body>
+
+  <script>
+    const array = ['red','blue','red','blue','red','yellow'];
+    const word = 'red';
+    let newArray = [];
+
+    function findIndex(array,word) {
+     for(let i = 0; i < array.length; i++){
+      if(array[i] === word) {
+        return i;
+      }
+     }
+     return -1;
+    }
+
+
+    function unique(array){
+      for(let j = 0; j<array.length; j++) {
+        const word = array[j];
+        if (findIndex(newArray,word)=== -1) {
+          newArray.push(array[j]); 
+        }
+      }
+    return newArray;
+    }
+
+
+
+    console.log(findIndex(array,word));
+    console.log(unique(array));
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teplota</title>
+</head>
+<body>
+<script>
+
+  function convertToFahrenheit(celsius){
+      let Fahrenheit = (celsius * 9/5) + 32;
+      return Fahrenheit;
+  }
+
+
+  function convertToCelsius(fahrenheit) {
+    let celsius = ((fahrenheit-32)*5/9);
+    return celsius;
+  }
+
+
+  function convertTemperature(degrees,unit) {
+
+    let result = convertToCelsius(degrees) + unit;
+    return result;
+  }
+
+  console.log(convertTemperature(86,'C'));
+
+
+
+</script>
+
+  
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 12g</title>
+</head>
+<body>
+
+  <button class="js-add-message" onclick="Add()">Add</button>
+  <button class="js-remove-message" onclick="Remove()">Remove</button>
+  
+  <script>
+    let intervalNumber = setInterval(toggleTitle,1000);
+    let showExerciseTitle = true;
+    let numberOfMessages = 2;
+
+    function toggleTitle() {
+      if(showExerciseTitle && numberOfMessages >0) {
+        document.title = "Exercise 12g"
+      } 
+      else if(numberOfMessages === 0 || numberOfMessages < 0) {
+        document.title = "Exercise 12g"
+      }
+      else {
+        document.title =`(${numberOfMessages}) new messages`
+      }
+      showExerciseTitle = !showExerciseTitle;
+    }
+    
+    function Add() {
+      numberOfMessages++;
+    }
+
+    function Remove() {
+      numberOfMessages--;
+    }
+    
+  </script>
+</body>
+</html>
